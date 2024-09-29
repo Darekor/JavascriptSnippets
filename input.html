@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Input And Type Conversion</h1>
+    <div class="input">
+        <h3>Input</h3>
+        <label for="iname">Your name: </label><input id="iname" type="text"> <br><br>
+        <label for="iage"></label>Your age : <input id="iage" type="number"> <br><br>
+        <button id="submit">Submit</button>
+    </div>
+
+    <div class="output">
+        <h3>Output</h3>
+        <p id="oname">Here will be your name</p>
+        <p id="oage">Here will be your age</p>
+    </div>
+
+    <script src="scripts/uinput.js"></script>
+
+    <hr>
+
+    <h2>JS code:</h2>
+    <div class="sourcecont">
+        <pre class="sourcedisp">
+            document.getElementById("submit").onclick = function(){
+
+                let name = document.getElementById("iname").value;
+                let age = Number(document.getElementById("iage").value);
+            
+                document.getElementById("oname").textContent = `Your name is ${name}`;
+                document.getElementById("oage").textContent = `You are ${age} years old. In two years you will be ${age+2} years old.`;
+            
+            }
+        </pre>
+    </div>
+</body>
+</html>
