@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedom Converter</title>
+    <link rel="stylesheet" href="../stylesheets/converter.css">
+</head>
+<body>
+    <div id="fconverter">
+        <h1>Freedom Units Converter</h1>
+        <input type="number" value="0" min="0" id="input">
+        <br>
+        <input type="radio" name="fchoice" id="eagletofield">
+        <label for="eagletofield">Footbal Fields => Bald Eagles</label>
+        <br>
+        <input type="radio" name="fchoice" id="fieldtoeagle">
+        <label for="fieldtoeagle">Bald Eagles => Footbal Fields</label>
+        <br>
+        <button onclick="convert()">Submit</button>
+        <p id="output">Pick a conversion type. </p>
+    </div>
+
+    <script src="../scripts/converter.js"></script>
+</body>
+</html>
