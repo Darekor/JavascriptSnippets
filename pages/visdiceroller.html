@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/vdice.css">
+
+    <title>Graphical Dice Roller</title>
+</head>
+<body>
+    <div id="rollcontainer">
+        <H1> Dice Roller</H1>
+        <label for="input">Dice Pool</label> <br>
+        <input type="number" min="1" value="1" id="input">
+        <br>
+        <button onclick="roll()">Roll</button>
+
+        <p id="textres">Here will be text result</p>
+        <div id="visres"></div>
+        
+    </div>
+
+    <script src="../scripts/vdroller.js"></script>
+
+    <hr>
+    <h2>JS code:</h2>
+    <div class="sourcecont">
+        <pre class="sourcedisp">
+function roll(){
+
+    const pool = Number(document.getElementById("input").value);
+    const textres = document.getElementById("textres");
+    const visres = document.getElementById("visres");
+    
+    visres.innerHTML = ``;
+
+    if (pool===0){
+        textres.textContent = "Input a correct number of dice";
+    }
+
+    else
+    {
+        textres.textContent = "You've rolled: "
+        for (let i=0; i<pool;i++)
+            {
+                let res = Math.floor(Math.random()*6) + 1;
+        
+                textres.textContent += res + ", ";
+                visres.innerHTML += `<img src="../media/dice-${res}.svg" alt="Dice ${res}" width="128">`;
+            }
+        textres.textContent = textres.textContent.slice(0,-2);
+    }
+
+
+}
+        </pre>
+    </div>
+</body>
+</html>
