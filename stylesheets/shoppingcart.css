@@ -1,0 +1,97 @@
+#shopmenu{
+    background-color: white;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.39);
+}
+
+.card{
+    text-align: center;
+    margin: auto;
+    border: solid 2px lightblue;
+    width: 175px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.card *{
+    margin: 5px 0px;
+}
+
+img{
+    margin: 0px;
+}
+
+#cards{
+    display: flex;
+}
+
+h4{
+    margin: 5px;
+}
+
+label{
+    font-size: 20px;
+}
+
+
+input{
+    text-align: center;
+    font-size: 25px;
+    max-width: 50px;
+    border: solid 2px rgba(0, 0, 255, 0.288);
+    border-radius: 7px;
+}
+
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button{
+    background-color: rgb(58, 178, 252);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+select{
+    background-color: rgb(58, 178, 252);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 255, 0.774);
+}
+
+table{
+    margin: 20px auto;
+    width: 80%;
+    border: solid black 2px ;
+}
+
+table, th,td{
+    border: solid black 2px ;
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/shoppingcart.css">
+    <title>Shopping cart</title>
+</head>
+<body>
+    <div id="shopmenu">
+        <h1>Shopping Menu</h1>
+
+            <div class="card">
+                <div>
+                    <h3 id="name">Cheap Car</h3>
+                    <button class="choicebutton" onclick="Prev()">←</button>
+                    <img id="carpic" src="../media/car_1.png" alt="Cheap car picture">
+                    <button class="choicebutton" onclick="Next()">→</button>
+                </div>
+
+                <br>
+                <label for="colorselect">Pick a color</label>
+                <br>
+                <select name="color" id="colorselect">
+                    <option value="Red">Red</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="White">White</option>
+                    <option value="Black">Black</option>
+                </select>
+                <br>
+    
+                <input type="number" min="0" value="0" id="incount">
+                <br>
+                <button onclick="AddToCart()">Add</button>
+            </div>
+
+        <table id="orders">
+            <tr>
+                <th>ID</th>
+                <th>Product</th>
+                <th>Count</th>
+                <th>Remove</th>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="../scripts/shoppingcart.js"></script>
+</body>
+</html>
